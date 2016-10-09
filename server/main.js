@@ -15,12 +15,12 @@ app.get('/', function(req, res) {
 });
 // cuando alguien se conecta
 io.on('connection', function(socket) {
-    socket.emit('messages', messages);
-    // cuando alguien envió un nuevo mensaje
-    socket.on('new-message', function(data) {
-        messages.push(data);
-        io.sockets.emit('messages', messages);
+    console.log('Alguien se conectó');
+    // cuando alguien envia un recordatorio
+    socket.on('new-recordatorio', function(data) {
+        io.sockets.emit('recordatorios', data);
     });
+
 });
 
 server.listen(3000, function() {

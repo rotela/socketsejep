@@ -4,15 +4,15 @@
   "description": "servidor de notificaciones",
   "main": "main.js",
   "scripts": {
-    "start" : "nodemon server/main.js"
+    "start": "nodemon server/main.js"
   },
   "author": "Ricardo Rotela",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "express": "~4.14.0",
-    "socket.io": "~1.5.0"
+    "express": "^4.14.0",
+    "socket.io": "^1.5.0"
   },
   "devDependencies": {
-    "nodemon": "~1.11.0"
+    "nodemon": "^1.11.0"
   }
 }
